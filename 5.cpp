@@ -1,45 +1,45 @@
 #include <iostream>
 using namespace std;
 #include<string>
-#include "header5.h"
+#include "header2.h"
 
 
 int main()
 {
     Country first("Ukraine", "Kyiv", 380, 43810000, 603700, 201);
-    first.setType(governmentType::DEMOCRACY);
+    first.setType(governmentType::kDemocracy);
     first.PrintCountry();
-    first.ñalculatePopulationDensity();
+    first.CalculatePopulationDensity();
     Land Ukraine("Europe");
     PrintLand(Ukraine);
 
     Country second("France", "Paris", 33, 67500000, 543940, 2937);
-    second.setType(governmentType::DEMOCRACY);
+    second.setType(governmentType::kDemocracy);
     second.PrintCountry();
-    second.ñalculatePopulationDensity();
+    second.CalculatePopulationDensity();
     Land France("Europe");
     PrintLand(France);
 
 
     Country third("Spain", "Madrid", 34, 47330000, 505990, 1425);
-    third.setType(governmentType::MONARCHY);
+    third.setType(governmentType::kMonarchy);
     third.PrintCountry();
-    third.ñalculatePopulationDensity();
+    third.CalculatePopulationDensity();
     Land Spain("Europe");
     PrintLand(Spain);
 
 
     Country fourth("Germany", "Berlin", 49, 83130000, 357588, 4223);
-    fourth.setType(governmentType::REPUBLIC);
+    fourth.setType(governmentType::kRepublic);
     fourth.PrintCountry();
-    fourth.ñalculatePopulationDensity();
+    fourth.CalculatePopulationDensity();
     Land Germany("Europe");
     PrintLand(Germany);
 
     Country fifth("USA", "Washington", 1, 331900000, 983400, 23000);
-    fifth.setType(governmentType::REPUBLIC);
+    fifth.setType(governmentType::kRepublic);
     fifth.PrintCountry();
-    fifth.ñalculatePopulationDensity();
+    fifth.CalculatePopulationDensity();
     Land USA("North America");
     PrintLand(USA);
 

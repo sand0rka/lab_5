@@ -3,12 +3,12 @@ using namespace std;
 
 enum governmentType
 {
-    DEMOCRACY,
-    REPUBLIC,
-    AUTOCRACY,
-    OLIGARCHY,
-    ARISTOCRACY,
-    MONARCHY
+    kDemocracy,
+    kRepublic,
+    kAutocracy,
+    kOligarchy,
+    kAristocracy,
+    kMonarchy
 };
 
 
@@ -18,7 +18,7 @@ private:
     string name;
     string capital;
     float area;
-    int code;
+    int code_of_country;
     governmentType Type;
 
 public:
@@ -29,52 +29,52 @@ public:
     {
     }
 
-    Country(string name, string capital, int code, int population, float area, int gdp)
+    Country(string name, string capital, int code_of_country, int population, float area, int gdp)
     {
         this->name = name;
         this->capital = capital;
-        this->code = code;
+        this->code_of_country = code_of_country;
         this->population = population;
         this->area = area;
         this->gdp = gdp;
     }
 
-    string getName()
+    string get_name()
     {
         return name;
     }
 
-    string getCapital()
+    string get_capital()
     {
         return capital;
 
     }
 
-    int getCode()
+    int get_code_of_country()
     {
-        return code;
+        return code_of_country;
     }
 
-    float getArea()
+    float get_area()
     {
         return area;
     }
 
-    governmentType getType()
+    governmentType get_Type()
     {
         return Type;
     }
 
-    void setType(governmentType Type) {
+    void set_Type(governmentType Type) {
         this->Type = Type;
     }
 
     void PrintCountry()
     {
-        cout << "\nName of country: " << name << "\nCapital: " << capital << "\nPhone code: " << code << "\nPopulation: " << population << "\nArea: " << area << "\nGDP(billions): " << gdp << endl;
+        cout << "\nName of country: " << name << "\nCapital: " << capital << "\nPhone code: " << code_of_country << "\nPopulation: " << population << "\nArea: " << area << "\nGDP(billions): " << gdp << endl;
     }
 
-    void ñalculatePopulationDensity()
+    void CalculatePopulationDensity()
     {
         int a = population;
         float b = area;

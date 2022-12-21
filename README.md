@@ -6,6 +6,6 @@ Add enum governmentType
 
 Add a function to calculate the country's population density
 
-Add methods for sorting points by GDP
+Add methods for sorting points by GDP (Gross domestic product)
 
 Show results on the screen
